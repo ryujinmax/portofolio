@@ -68,7 +68,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: #6B728E;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -84,7 +84,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: #00ABB3;
 }
 .navbar .max-width{
     display: flex;
@@ -97,7 +97,7 @@ section .title::after{
     font-weight: 600;
 }
 .navbar .logo a span{
-    color: crimson;
+    color: #00ABB3;
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
@@ -116,7 +116,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    color: crimson;
+    color: #00ABB3;
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -132,7 +132,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: #00ABB3;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -187,7 +187,7 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
+    color: rgb(0, 217, 255);
     font-weight: 500;
 }
 .home .home-content a{
@@ -208,7 +208,7 @@ section .title::after{
 }
 
 .about .title::after{
-    content: "Siapa Saya";
+    content: "Siapa Saya ?";
 }
 .about .about-content .left{
     width: 45%;
@@ -228,25 +228,25 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: crimson;
+    color: #00ABB3;
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: crimson;
+    background: #00ABB3;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #00ABB3;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
+    color: #00ABB3;
     background: none;
 }
 
@@ -283,7 +283,7 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: crimson;
+    color: #00ABB3;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -312,20 +312,20 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: crimson;
+    background: #00ABB3;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #00ABB3;
     transition: all 0.3s ease;
 }
 
 
 .skills .skills-content .left a:hover{
-    color: crimson;
+    color: #00ABB3;
     background: none;
 }
 
@@ -350,6 +350,9 @@ section .title::after{
     width: 100%;
     background: lightgrey;
     position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 45s cubic-bezier(1,0,0.5,1) forwards;
 }
 
 .skills .skills-content .right .line::before{
@@ -357,26 +360,27 @@ section .title::after{
     position: absolute;
     height: 100%;
     left: 0;
-    top: 0;
-    background: crimson;
+    top: 0;  
+    background: #00ABB3;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
 }
 
 .skills-content .right .periklanan::before{
     width: 93%;
 }
-
 .skills-content .right .html::before{
     width: 72%;
 }
-
 .skills-content .right .css::before{
     width: 44%;
 }
-
 .skills-content .right .js::before{
     width: 41%;
 }
-
 .skills-content .right .after-effect::before{
     width: 50%;
 }
@@ -386,7 +390,7 @@ section .title::after{
 }
 
 .skills-content .right .davinci::before{
-    width: 65%;
+    width: 65%;   
 }
 
 .skills-content .right .sketchup::before{
@@ -396,6 +400,7 @@ section .title::after{
 .skills-content .right .blender::before{
     width: 33%;
 }
+
 
 .owl-dots{
     text-align: center;
@@ -428,7 +433,6 @@ section .title::after{
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
-
 .contact .contact-content .text{
     font-size: 20px;
     font-weight: 600;
@@ -505,26 +509,31 @@ section .title::after{
 }
 
 .contact .right form .button-area a{
-    color: rgb(166, 166, 166);
+    display: inline-block;
+    background-color: #00ABB3;
+    background: transparent;
+    color: #fff;
+    border: 0 transparent;
+    transition: all 0.3s ease;
   }
-.right form .button-area button{
-  color: #fff;
-  display: block;
-  width: 160px!important;
-  height: 45px;
-  outline: none;
-  font-size: 18px;
-  font-weight: 500;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-wrap: nowrap;
-  background: crimson;
-  border: 2px solid crimson;
-  transition: all 0.3s ease;
+  
+.right .button-area button{
+    display: inline-block;
+    background: #00ABB3;
+    color: #00ABB3;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #00ABB3;
+    transition: all 0.3s ease;
 }
+
+
 .right form .button-area button:hover{
-  color: rgb(20, 190, 220);
-  background: none;
+    color: #00ABB3;
+    background: none;
 }
 footer{
     background: #EDEDED;

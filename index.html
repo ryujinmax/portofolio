@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166000335-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -23,6 +23,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+        <link
+      rel="shortcut icon"
+      href="assets/img/Logo V.png"
+      type="image/x-icon"
+      />
 </head>
 
 <body>
@@ -60,13 +66,13 @@
             <h2 class="title">Tentang Saya</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="/assets/img/Foto cowok Keren.png" alt="">
+                    <div data-aos="fade-up"><img src="/assets/img/Cowok 1.jpg" alt=""></div>
                 </div>
                 <div class="column right">
-                    <div class="text">Saya Ryu dan saya adalah <span class="typing-2"></span></div>
+                    <div data-aos="zoom-in"><div class="text">Saya Ryu dan saya adalah <span class="typing-2"></span></div>
                     <p>Perkenalkan nama saya adalah Aryuka Falian Jornasena panggilan saya Ryu. Saya lahir di Karanganyar 17 Januari 2007, saya tinggal di Cikarang Selatan Kec. Ciantra, Kab. Bekasi, Jawa Barat. Saya adalah Software Engineering.
-                    </p>
-                    <a href="/assets/img/Portofolio-download.pdf" download="CV">Download CV Saya</a>
+                    </p></div>
+                    <div data-aos="fade-down"><a href="/assets/img/Portofolio-download.pdf" download="CV">Download CV</a></div>
                 </div>
             </div>
         </div>
@@ -75,7 +81,8 @@
     <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">Layanan Saya</h2>
-            <div class="serv-content">
+            <div data-aos="fade-up">
+                <div class="serv-content">
                 <div class="card">
                     <div class="box">
                         <i class="fas fa-paint-brush"></i>
@@ -85,9 +92,9 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="text">Influencer</div>
-                        <p> Berpengalaman dalam menjadi Influencer yang membuat produk menjadi pusat perhatian dan membuat customer percaya terhadap produk</p>
+                        <i class="fas fa-chart-bar"></i>
+                        <div class="text">Digital Media Marketing</div>
+                        <p> Berpengalaman dalam menjadi Digital Media Marketing yang membuat produk menjadi pusat perhatian, membuat customer percaya terhadap produk, bisa membuat desain grafis, SEO, email marketing, mobile marketing, dan memasarkanya ke berbagai media internet dan sosial media.</p>
                     </div>
                 </div>
                 <div class="card">
@@ -98,23 +105,24 @@
                     </div>
                 </div>
             </div>
+            </div>
         </div>
         </div>
     </section>
 
     <section class="skills" id="skills">
         <div class="max-width">
-            <h2 class="title">Skill</h2>
+            <div data-aos="fade-down"><h2 class="title">Skill</h2></div>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">Deskripsi</div>
-                    <p> Saya mempunyai banyak pengalaman, mulai dari pengalaman Komputer(Coding dan Jaringan) dan Dunia Luar(Promosi)</p>
-                    <a href="#">Baca Lainnya</a>
+                    <div data-aos="fade-down"><div class="text">Deskripsi</div>
+                    <p> Saya mempunyai banyak pengalaman dari pengalaman Komputer seperti Hadware, Coding, Jaringan, Desain (UI/UX), 3D Design, Edit Video dan pengalaman Marketing. </p>
+                    <a href="#">Baca Lainnya</a></div>
                 </div>
                 <div class="column right">
-                    <div class="bars">
+                    <div data-aos="fade-right"><div class="bars">
                         <div class="info">
-                            <span>Periklanan</span>
+                            <span>Advertisement</span>
                             <span>93%</span>
                         </div>
                         <div class="line periklanan"></div>
@@ -174,7 +182,7 @@
                             <span>33%</span>
                         </div>
                         <div class="line blender"></div>
-                    </div>
+                    </div></div>
                 </div>
             </div>
         </div>
@@ -199,7 +207,7 @@
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="info">
                                 <div class="head">Alamat</div>
-                                <div class="sub-title">Cikarang Sekatan, Jawa Barat</div>
+                                <div class="sub-title">Cikarang Selatan, Bekasi, Jawa Barat, Indonesia</div>
                             </div>
                         </div>
                         <div class="row">
@@ -268,6 +276,72 @@
     </footer>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="/assets/js/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    document.onkeydown = function(e) {
+    if(event.keyCode == 123) {
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)){
+    return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)){
+    return false;
+    }
+    }
+    </script>
+    <script type="text/javascript">
+        //Script for disabling right click on mouse
+        var message="Loh MAS !";
+        function clickdsb(){
+        if (event.button==2){
+        alert(message);
+        return false;
+        }
+        }
+        function clickbsb(e){
+        if (document.layers||document.getElementById&&!document.all){
+        if (e.which==2||e.which==3){
+        alert(message);
+        return false;
+        }
+        }
+        }
+        if (document.layers){
+        document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown=clickbsb;
+        }
+        else if (document.all&&!document.getElementById){
+        document.onmousedown=clickdsb;
+        }
+        
+        document.oncontextmenu=new Function("alert(message);return false")
+        
+        </script>
 </body>
 
 </html>
