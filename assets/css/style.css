@@ -352,7 +352,7 @@ section .title::after{
     position: relative;
     transform: scaleX(0);
     transform-origin: left;
-    animation: animate 45s cubic-bezier(1,0,0.5,1) forwards;
+    animation: animate 3s cubic-bezier(1,0,0.5,1) forwards;
 }
 
 .skills .skills-content .right .line::before{
