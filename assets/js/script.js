@@ -78,4 +78,16 @@ $(document).ready(function(){
             }
         }
     });
+    document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+  if(options.enableAlert) {
+    alert(options.alertText);
+  }
+});
+
+var options = {
+  enableAlert: true, // Set this false to deactivate alert
+  alertText: "Yahahaha Hayyukk....." // Customize this to change alert text
+}
+
 });
